@@ -1,7 +1,20 @@
+/* line 56, icone/*.png */
+.icone-sprite {
+  background-image: url('../images/icone-se32cd6eb13.png');
+  background-repeat: no-repeat;
+}
+
+/* line 72, logo/*.png */
+.logo-sprite {
+  background-image: url('../images/logo-se2e27dcd8e.png');
+  background-repeat: no-repeat;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+/* line 6, layout/reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,29 +33,111 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
+/* line 27, layout/reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
+/* line 31, layout/reset.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 34, layout/reset.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 37, layout/reset.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
+/* line 40, layout/reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 45, layout/reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/*# sourceMappingURL=style.css.map */
+/* line 1, layout/geral.scss */
+body {
+  font-family: monospace;
+}
+
+/* line 5, layout/geral.scss */
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 1, layout/header.scss */
+header {
+  background-color: #000033;
+  border-top: 5px solid limegreen;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+}
+
+/* line 9, layout/header.scss */
+header .container {
+  position: relative;
+}
+
+/* line 13, layout/header.scss */
+.logotipo {
+  height: 70px;
+  width: 200px;
+  background-color: yellow;
+}
+/* line 19, layout/header.scss */
+.logotipo img {
+  height: 100%;
+  background-color: violet;
+}
+/* line 23, layout/header.scss */
+.logotipo h1 {
+  max-width: 50%;
+  background-color: red;
+  color: white;
+  margin: 0 auto;
+}
+
+/* line 31, layout/header.scss */
+.menu-principal {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+/* line 37, layout/header.scss */
+.menu-principal ul {
+  padding-left: 0;
+}
+/* line 40, layout/header.scss */
+.menu-principal li {
+  display: inline-block;
+  width: 5em;
+}
+/* line 44, layout/header.scss */
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+}
+/* line 47, layout/header.scss */
+.menu-principal a:hover {
+  text-decoration: underline;
+}

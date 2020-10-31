@@ -1,3 +1,9 @@
+$icone-spacing: 5px;
+@import 'icone/*.png';
+
+$logo-spacing:20px;
+@import 'logo/*.png';
+
 @import 'helpers/variaveis.scss';
 @import 'helpers/mixins.scss';
 
