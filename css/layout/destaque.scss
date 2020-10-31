@@ -1,0 +1,39 @@
+/* DESTAQUE */
+.destaque {
+    background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-position: initial;
+    height: 330px;
+    padding-top: 10em;
+    color: white;
+
+    .sombra-texto {
+    }
+
+    p {
+        width: 30em;
+        @include single-text-shadow;
+
+        &:first-child {
+            width: 30em;
+            font-size: 1.3em;
+            line-height: 1.1;
+
+            &:first-line {
+                font-size: 2.2em;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    button {
+        margin-top: 1em;
+        background: $cor-padrao;
+        border: 0;
+        padding: .6em;
+        font-size: 1.2em;
+        font-weight: bold;
+        @include border-radius(50px);
+        @include box-shadow(#000 0px 2px 6.65px);
+    }
+}
