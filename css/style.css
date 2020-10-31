@@ -3,8 +3,14 @@
   background-repeat: no-repeat;
 }
 
-.logo-sprite {
-  background-image: url('../images/logo-se2e27dcd8e.png');
+.tipo-sprite, .tipo-logo-android, .tipo-logo-apple, .tipo-logo-blackberry, .tipo-logo-windows {
+  background-image: url('../images/tipo-s00a7ddb508.png');
+  background-repeat: no-repeat;
+}
+
+.plataformas li {
+  text-indent: -9999px;
+  overflow: hidden;
   background-repeat: no-repeat;
 }
 
@@ -408,6 +414,7 @@ th {
 
 /* GERAL */
 body {
+  background-color: #ebebeb;
   font-family: "Roboto Slab", serif;
 }
 
@@ -522,4 +529,53 @@ header .container {
   -moz-box-shadow: #000 0px 2px 6.65px;
   -webkit-box-shadow: #000 0px 2px 6.65px;
   box-shadow: #000 0px 2px 6.65px;
+}
+
+/* SOBRE */
+.sobre p {
+  font: .9em/1.8 sans-serif;
+}
+.sobre p:first-child {
+  margin-bottom: 3em;
+}
+
+.duas-colunas {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  columns: 1;
+}
+.duas-colunas h3 {
+  margin: 0;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.tipo-logo-android {
+  background-position: 0 0;
+}
+
+.tipo-logo-apple {
+  background-position: 0 -80px;
+}
+
+.tipo-logo-blackberry {
+  background-position: 0 -161px;
+}
+
+.tipo-logo-windows {
+  background-position: 0 -226px;
+}
+
+.plataformas {
+  padding: 0;
+}
+
+.plataformas li {
+  display: inline-block;
+  width: 65px;
+  height: 60px;
+  margin: 1em 1.5em 0 0;
 }
