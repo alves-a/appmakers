@@ -1,0 +1,32 @@
+/* PLANOS */
+.planos {
+    background-color: $cor-auxiliar;
+    color: white;
+}
+
+.plano {
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    background-color: white;
+
+    h3 {
+        background-color: $cor-padrao;
+    }
+
+    div {
+        color: $cor-padrao;
+        font-weight: bold;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    button {
+        background: $cor-padrao;
+        @include border-radius(10px);
+        @include box-shadow(#000 0px 2px 6.65px);
+    }
+}
