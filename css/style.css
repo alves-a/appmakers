@@ -1,4 +1,4 @@
-.icone-sprite {
+.icone-sprite, .icone-icone-check, .icone-icone-x {
   background-image: url('../images/icone-se32cd6eb13.png');
   background-repeat: no-repeat;
 }
@@ -583,34 +583,79 @@ ul {
 /* PLANOS */
 .planos {
   background-color: #1e2c35;
-  color: white;
+}
+.planos h2 {
+  color: #fff;
 }
 
 .plano {
-  color: #000;
-  text-align: center;
+  background: #fff;
+  width: 288px;
   display: inline-block;
-  width: 30%;
-  background-color: white;
+  margin: 1em 0 0 1.4em;
+  padding-bottom: 2em;
+}
+.plano:hover {
+  background: #dedede;
 }
 .plano h3 {
-  background-color: limegreen;
+  color: #fff;
+  font-size: 1.8em;
+  background: limegreen;
+  text-align: center;
+  height: 2em;
+  padding-top: .6em;
+  margin-top: 0;
 }
 .plano div {
+  text-align: center;
   color: limegreen;
-  font-weight: bold;
-}
-.plano li {
-  list-style: none;
+  font-size: 2.75em;
 }
 .plano button {
   background: limegreen;
+  border: 0;
+  color: #fff;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -moz-box-shadow: #000 0px 2px 6.65px;
   -webkit-box-shadow: #000 0px 2px 6.65px;
   box-shadow: #000 0px 2px 6.65px;
+  margin-left: 2em;
+}
+
+.itens-plano {
+  padding-left: 1.2em;
+}
+.itens-plano li {
+  font-size: 1em;
+  list-style: none;
+  border-bottom: 1px solid #acacac;
+  padding: .5em;
+  width: 14.8em;
+}
+.itens-plano li:last-child {
+  border: 0;
+}
+.itens-plano span {
+  float: right;
+}
+
+.icone-icone-check {
+  background-position: 0 0;
+}
+
+.icone-icone-x {
+  background-position: 0 -23px;
+}
+
+.icone-icone-check, .icone-icone-x {
+  width: 18px;
+  height: 18px;
 }
 
 /* BLOG */
