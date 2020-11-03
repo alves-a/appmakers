@@ -1,0 +1,32 @@
+/* CONTATO */
+
+.contato {
+    background: $cor-branca;
+
+    form {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: .8em;
+        padding: 4px 8px;
+        @include border-radius(10px);
+        border: 2px solid #ccc;
+    }
+
+    button {
+        margin: 0 auto;
+        background: $cor-padrao;
+        border: 0;
+        color: $cor-branca;
+        width: 210px;
+        height: 38px;
+        font-size: 1.2em;
+        @include border-radius(10px);
+        @include box-shadow(black 0 2px 6.65px);
+    }
+}
