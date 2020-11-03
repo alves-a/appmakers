@@ -1,0 +1,99 @@
+/* FOOTER */
+footer {
+    display: block;
+    position: relative;
+
+    .container-logo {
+        width: 50%;
+        display: flex;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        background: url(../../images/fundo-rodape.png);
+        opacity: .02;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &::before{
+        content: "";
+        background: $cor-auxiliar;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .container {
+        padding-top: multiplica-pela-fonte(3);
+        height: multiplica-pela-fonte(6.5);
+        position: relative;
+    }
+
+    a {
+        color: $cor-branca;
+        text-decoration: none;
+    }
+}
+
+.menu-rodape, .social {
+    position: absolute;
+}
+
+.menu-rodape {
+    top: 1em;
+    right: 0;
+
+    ul li {
+        display: inline-block;
+        margin-left: 2em;
+    }
+}
+
+.social {
+    bottom: 0;
+    right: 0;
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            width: 55px;
+            height: 55px;
+            @extend %image-replacement;
+            margin-left: 1em;
+        }
+    }
+    a {
+        background-position: top;
+        background-size: 50px 50px;
+    }
+
+    a[href*="facebook"] {
+        background-image: url(../../images/facebook.png);
+    }
+
+    a[href*="twitter"] {
+        background-image: url(../../images/twitter.png);
+    }
+
+    a[href*="instagram"] {
+        background-image: url(../../images/instagram.png);
+    }
+}
+
+.menu-rodape li, .social li {
+    display: inline;
+}
