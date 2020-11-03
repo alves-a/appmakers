@@ -9,6 +9,7 @@ header {
 
 header .container {
     position: relative;
+    top: -.5em;
 }
 
 
@@ -33,6 +34,7 @@ header .container {
 }
 
 .menu-principal {
+    line-height: 100px;
     position: absolute;
     right: 0;
     top: -.5em;

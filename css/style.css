@@ -442,7 +442,7 @@ h2 {
 
 /* HEADER */
 header {
-  border-top: 5px solid limegreen;
+  border-top: 5px solid #1ae5be;
   background-color: rgba(30, 44, 53, 0.8);
   height: 100px;
   width: 100%;
@@ -451,6 +451,7 @@ header {
 
 header .container {
   position: relative;
+  top: -.5em;
 }
 
 .container-logo {
@@ -473,6 +474,7 @@ header .container {
 }
 
 .menu-principal {
+  line-height: 100px;
   position: absolute;
   right: 0;
   top: -.5em;
@@ -501,7 +503,7 @@ header .container {
   background-position: initial;
   height: 330px;
   padding-top: 10em;
-  color: white;
+  color: #fff;
 }
 .destaque p {
   width: 30em;
@@ -517,8 +519,9 @@ header .container {
   font-weight: bolder;
 }
 .destaque button {
+  color: #000;
   margin-top: 1em;
-  background: limegreen;
+  background: #1ae5be;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
@@ -599,9 +602,9 @@ ul {
   background: #dedede;
 }
 .plano h3 {
-  color: #fff;
+  color: #000;
   font-size: 1.8em;
-  background: limegreen;
+  background: #1ae5be;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -609,13 +612,13 @@ ul {
 }
 .plano div {
   text-align: center;
-  color: limegreen;
+  color: #1ae5be;
   font-size: 2.75em;
 }
 .plano button {
-  background: limegreen;
+  background: #1ae5be;
   border: 0;
-  color: #fff;
+  color: #000;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -666,7 +669,7 @@ ul {
 .blog::after {
   content: "";
   background: url(../../images/fundo.png);
-  background-size: 25px 25px;
+  background-size: 30px 30px;
   opacity: .15;
   top: 0;
   left: 0;
@@ -674,6 +677,13 @@ ul {
   right: 0;
   position: absolute;
   z-index: -1;
+}
+.blog .container {
+  background: #ebebeb;
+  padding: 1em;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .post-destaque,
@@ -724,9 +734,9 @@ ul {
 }
 .contato button {
   margin: 0 auto;
-  background: limegreen;
+  background: #1ae5be;
   border: 0;
-  color: #fff;
+  color: #000;
   width: 210px;
   height: 38px;
   font-size: 1.2em;

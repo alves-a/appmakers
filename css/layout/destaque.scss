@@ -5,7 +5,7 @@
     background-position: initial;
     height: 330px;
     padding-top: 10em;
-    color: white;
+    color: $cor-branca;
 
     p {
         width: 30em;
@@ -24,6 +24,7 @@
     }
 
     button {
+        color: $cor-preta;
         margin-top: 1em;
         background: $cor-padrao;
         border: 0;
