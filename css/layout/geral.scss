@@ -7,6 +7,11 @@ body {
 .container {
     width: 940px;
     margin: 0 auto;
+
+    @media #{$mq-mobile} {
+        width: 90%;
+        margin: 10px;
+    }
 }
 
 .titulo-secao {

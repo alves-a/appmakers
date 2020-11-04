@@ -5,11 +5,19 @@ header {
     height: 100px;
     width: 100%;
     position: absolute;
+
+    @media #{$mq-mobile} {
+        height: auto;
+    }
 }
 
 header .container {
     position: relative;
     top: -.5em;
+
+    @media #{$mq-mobile} {
+        position: static;
+    }
 }
 
 
@@ -23,13 +31,20 @@ header .container {
         float: right;
         line-height: 70px;
         padding-left: 70px;
-        font-size: 36px;
+        font-size: multiplica-pela-fonte(2.25);
         font-weight: bold;
         font-style: italic;
         color: white;
         background-image: url("https://www.flaticon.com/svg/static/icons/svg/1512/1512292.svg");
         background-size: 70px auto;
         background-repeat: no-repeat;
+
+        @media #{$mq-mobile} {
+              max-width: 50%;
+              margin: 0 auto;
+              font-size: multiplica-pela-fonte(1.25);
+              line-height: 30px;
+        }
     }
 }
 
@@ -52,6 +67,18 @@ header .container {
         text-decoration: none;
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    @media #{$mq-mobile} {
+        position: static;
+        display: block;
+        text-align: center;
+        width: auto;
+        line-height: unset;
+        li {
+          margin: .4em;
+          width: auto;
         }
     }
 }

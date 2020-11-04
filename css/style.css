@@ -422,6 +422,12 @@ body {
   width: 940px;
   margin: 0 auto;
 }
+@media (max-width: 980px) {
+  .container {
+    width: 90%;
+    margin: 10px;
+  }
+}
 
 .titulo-secao {
   text-decoration: underline;
@@ -448,10 +454,20 @@ header {
   width: 100%;
   position: absolute;
 }
+@media (max-width: 980px) {
+  header {
+    height: auto;
+  }
+}
 
 header .container {
   position: relative;
   top: -.5em;
+}
+@media (max-width: 980px) {
+  header .container {
+    position: static;
+  }
 }
 
 .container-logo {
@@ -471,6 +487,14 @@ header .container {
   background-image: url("https://www.flaticon.com/svg/static/icons/svg/1512/1512292.svg");
   background-size: 70px auto;
   background-repeat: no-repeat;
+}
+@media (max-width: 980px) {
+  .container-logo h1 {
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .menu-principal {
@@ -495,6 +519,19 @@ header .container {
 .menu-principal a:hover {
   text-decoration: underline;
 }
+@media (max-width: 980px) {
+  .menu-principal {
+    position: static;
+    display: block;
+    text-align: center;
+    width: auto;
+    line-height: unset;
+  }
+  .menu-principal li {
+    margin: .4em;
+    width: auto;
+  }
+}
 
 /* DESTAQUE */
 .destaque {
@@ -504,6 +541,12 @@ header .container {
   height: 330px;
   padding-top: 10em;
   color: #fff;
+}
+@media (max-width: 980px) {
+  .destaque {
+    font-size: 14px;
+    height: 250px;
+  }
 }
 .destaque p {
   width: 30em;
@@ -517,6 +560,16 @@ header .container {
 .destaque p:first-child:first-line {
   font-size: 2.2em;
   font-weight: bolder;
+}
+@media (max-width: 980px) {
+  .destaque p:first-child {
+    width: auto;
+  }
+}
+@media (max-width: 980px) {
+  .destaque p {
+    width: auto;
+  }
 }
 .destaque button {
   color: #000;
@@ -692,6 +745,12 @@ ul {
   display: inline-block;
   vertical-align: top;
 }
+@media (max-width: 980px) {
+  .post-destaque,
+  .posts-antigos {
+    width: auto;
+  }
+}
 
 .post-destaque {
   margin-right: 2em;
@@ -722,6 +781,11 @@ ul {
   margin: 0 auto;
   width: 50%;
   text-align: center;
+}
+@media (max-width: 980px) {
+  .contato form {
+    width: auto;
+  }
 }
 .contato input, .contato textarea {
   display: block;

@@ -7,6 +7,11 @@
     padding-top: 10em;
     color: $cor-branca;
 
+    @media #{$mq-mobile} {
+        font-size: 14px;
+        height: 250px;
+    }
+
     p {
         width: 30em;
         @include single-text-shadow;
@@ -20,6 +25,13 @@
                 font-size: 2.2em;
                 font-weight: bolder;
             }
+            @media #{$mq-mobile} { 
+                width: auto;
+            }
+        }
+
+        @media #{$mq-mobile} { 
+            width: auto;
         }
     }
 
