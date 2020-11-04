@@ -14,8 +14,9 @@ footer {
 
     &::after {
         content: '';
-        background: url(../../images/fundo-rodape.png);
-        opacity: .02;
+        background: url(https://www.flaticon.com/svg/static/icons/svg/3497/3497146.svg);
+        background-size: 100px;
+        opacity: .1;
         top: 0;
         left: 0;
         bottom: 0;
@@ -82,15 +83,15 @@ footer {
     }
 
     a[href*="facebook"] {
-        background-image: url(../../images/facebook.png);
+        background-image: url(https://www.flaticon.com/svg/static/icons/svg/1384/1384168.svg);
     }
 
     a[href*="twitter"] {
-        background-image: url(../../images/twitter.png);
+        background-image: url(https://www.flaticon.com/svg/static/icons/svg/1384/1384174.svg);
     }
 
     a[href*="instagram"] {
-        background-image: url(../../images/instagram.png);
+        background-image: url(https://www.flaticon.com/svg/static/icons/svg/1384/1384172.svg);
     }
 }
 
